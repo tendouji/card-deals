@@ -1,6 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) (ReactJS vers ^16.13.1, Typescript vers ^3.7.5). 
 
-(ReactJS vers ^16.13.1, Typescript vers ^3.7.5)
+Development time taken:
+* Initial code: 30min (I wrote the code in CodePen, to grasp the logic)
+* ReactJS code: 2hours (Separated the code into Components, Classes and Data types, etc. And finally beautifying with SCSS)
+
+
 
 ## Project Purpose
 
