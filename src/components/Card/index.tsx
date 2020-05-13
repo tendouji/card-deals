@@ -1,3 +1,11 @@
+/**
+ * NOTE:
+ * Card component
+ *
+ * Generate shapes and number based on the cardType props
+ */
+
+
 import React from "react";
 import styled from "styled-components";
 import {Card_S, Card_H, Card_C, Card_D} from "../../assets";

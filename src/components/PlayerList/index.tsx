@@ -1,8 +1,17 @@
+/**
+ * NOTE:
+ * PlayerList component
+ *
+ * Generate the rows of player with name and cards in the display.
+ * Depending on the withVisual toggle value, it will display in text format or in visual card view
+ */
+
+
 import React from "react";
 import styled from "styled-components";
 import {DeckType, PlayerType} from "../../models";
 import {colors, elementSizes, fontSizes, gaps} from "../../constants/layout";
-import {shapeList, text, cardList} from "../../constants/app";
+import {text} from "../../constants/app";
 import Card from "../Card";
 
 

@@ -16,9 +16,30 @@ import Toggler from "./components/Toggler";
 import Modal from "./components/Modal";
 
 
+/**
+ * NOTE:
+ * As this project runs a fairly basic operations,
+ * I did not use redux for it's storage capabilty, to keep the project simple.
+ *
+ * The main component will be this App, which will holds most of the app states,
+ * eg. Number of players, Player objects, etc.
+ *
+ * App will then communicate via props, to its children.
+ *
+ * After certain considerations based on this project operation,
+ * I have decided to use mostly Functional Components instead of the heavier React Components.
+ *
+ * Styling for the components uses styled components for its SCSS support with Javascript capability.
+ */
+
 const App: React.FC<{}> = () => {
     let cardDeck: CardDeck;
     let newDeck: DeckType;
+
+    /**
+     * NOTE:
+     * There are 2 basic Javascript classes used for CardDeck and Player objects.
+     */
 
     const inputPlayerRef: React.RefObject<HTMLInputElement> = React.createRef();
     const withAnimationRef: React.RefObject<HTMLInputElement> = React.createRef();
@@ -26,8 +47,15 @@ const App: React.FC<{}> = () => {
     const [numOfPlayer, updateNumOfPlayer] = React.useState(0);
     const [playerList, updatePlayerList] = React.useState([] as Player[]);
     const [withVisual, updateWithVisual] = React.useState(defaultToggleState);
-
     const [modalObj, updateModal] = React.useState(defaultModalState);
+
+    /**
+     * NOTE:
+     * numOfPlayer, playerList, withVisual and modalObj are the highest level states.
+     * If this project gets bigger, we can store these in redux instead for easier sharing.
+     *
+     * These objects are updated via React useState and listened to changes via React useEffect
+     */
 
     React.useEffect(() => {
         if (numOfPlayer > 0) {
@@ -50,6 +78,12 @@ const App: React.FC<{}> = () => {
         }
     };
 
+
+    /**
+     * NOTE:
+     * validateCount is the method to filter all the invalid inputs.
+     * Any invalid input will stop here, and an error prompt is displayed instead.
+     */
     const validateCount = () => {
         const currentCountStr = inputPlayerRef.current!.value;
 

@@ -1,7 +1,14 @@
+/**
+ * NOTE:
+ * Player class
+ *
+ * Basic JS class to create player with data
+ */
+
+
 import {DeckType, PlayerType} from "../../models";
 
 
-// NOTE: Simple class to create player with data
 
 class Player implements PlayerType {
     name:string = '';

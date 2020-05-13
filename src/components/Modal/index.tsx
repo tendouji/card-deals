@@ -1,3 +1,11 @@
+/**
+ * NOTE:
+ * Modal prompt component
+ *
+ * Generate confirmation popup
+ */
+
+
 import React from "react";
 import styled from "styled-components";
 import {

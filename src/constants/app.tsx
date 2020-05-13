@@ -1,5 +1,16 @@
+/**
+ * NOTE:
+ * Standard app constants
+ *
+ * I would normally stored text string in separate files, eg. constants/lang/en_US.tsx.
+ * Convenient for future additional language support.
+ *
+ * Any default values will be stored here as well.
+ */
+
+
+
 import {ModalType} from "../models";
-import React from "react";
 
 const shapeList:string[] = ['S', 'H', 'C', 'D'];
 const cardList:string[] = ['A', '2', '3', '4', '5', '6', '7', '8', '9', 'X', 'J', 'Q', 'K'];

@@ -1,3 +1,10 @@
+/**
+ * NOTE:
+ * As this project runs with typescript,
+ * this is where I store all my custom type / interface
+ */
+
+
 export type GeneralObjType = {
     [key: string]: any,
 }

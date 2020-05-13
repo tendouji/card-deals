@@ -1,7 +1,14 @@
+/**
+ * NOTE:
+ * CardDeck class
+ *
+ * Basic JS class to generate deck and shuffle the cards
+ */
+
+
 import {DeckType} from "../../models";
 import {cardList, shapeList} from "../../constants/app";
 
-// NOTE: Simple class to generate deck and shuffle the cards
 
 class CardDeck {
     fullDeck:DeckType = new Array<string>(shapeList.length * cardList.length); // assign specific range, 52 cards

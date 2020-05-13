@@ -1,3 +1,12 @@
+/**
+ * NOTE:
+ * Toggle component
+ *
+ * Create custom toggle component
+ */
+
+
+
 import React, {forwardRef} from "react";
 import styled from "styled-components";
 import {colors, elementSizes} from "../../constants/layout";

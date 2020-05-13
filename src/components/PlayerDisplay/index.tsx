@@ -1,3 +1,11 @@
+/**
+ * NOTE:
+ * PlayerDisplay component
+ *
+ * Container that generate the list and hold the rows of PlayerList
+ */
+
+
 import React from "react";
 import styled from "styled-components";
 import {PlayerType} from "../../models";

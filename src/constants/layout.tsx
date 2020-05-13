@@ -1,3 +1,13 @@
+/**
+ * NOTE:
+ * Standard app layout constants
+ *
+ * Similar to app constants, the code here is mainly for theme purposes.
+ *
+ * If the styling gets larger, we can separate this as a NPM library to be used in multiple React app
+ */
+
+
 import {GeneralObjType} from "../models";
 
 const gaps: GeneralObjType = {
